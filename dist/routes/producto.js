@@ -1,0 +1,10 @@
+import express from "express";
+import { findAll, findById, save, update, deleteById } from "../controllers/controlles-productos.js";
+import { authMiddleware } from "../middlewares/auth.js";
+const router = express.Router();
+router.get("/", findAll);
+router.get("/:id", findById);
+router.post("/", authMiddleware, save);
+router.put("/:id", authMiddleware, update);
+router.delete("/:id", authMiddleware, deleteById);
+export default router;

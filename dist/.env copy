@@ -1,0 +1,4 @@
+PUERTO=3200
+MONGO_URI=mongodb+srv://henryarevalo_db_user:FapHmiWrIpCqEw08@cluster0.w0afzkr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=128734812741024742817489714230
+JWT_EXPIRE=1h

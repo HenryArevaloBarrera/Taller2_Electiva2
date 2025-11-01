@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%- include("templates/header") %>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(135deg, #1a1a1d, #2e2e38);
+      color: #fff;
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav .logo a {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #4cafef;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    nav .menu a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav .menu a:hover {
+      color: #4cafef;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      background: url("/img/fondo.png") no-repeat center center/cover;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 0 20px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .hero-content h1 {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      color: #4cafef;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 35px;
+      color: #e0e0e0;
+    }
+
+    /* Botones */
+    .btn {
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 10px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #4cafef, #3a8fd0);
+      color: #000000;
+      box-shadow: 0 4px 15px rgba(76,175,239,0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 6px 20px rgba(76,175,239,0.6);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Animaciones */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.3rem;
+      }
+      .hero-content p {
+        font-size: 1rem;
+      }
+      nav {
+        padding: 15px 20px;
+      }
+      nav .menu a {
+        margin-left: 15px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <a href="/">MyApp</a>
+    </div>
+    <div class="menu">
+      <a href="/api/auth/login">Iniciar Sesión</a>
+      <a href="/productos">Productos</a>
+      <a href="/api-docs" target="_blank">Docs</a>
+    </div>
+  </nav>
+
+  <!-- Hero principal -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>MyApp</h1>
+      <p>Accede fácilmente, administra tu cuenta y explora nuevas oportunidades. Todo en un solo lugar, de manera simple y moderna.</p>
+      <a href="/api/auth/login" class="btn btn-primary">Iniciar Sesión</a>
+      <a href="/productos" class="btn btn-secondary">Ver Productos</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <%= new Date().getFullYear() %> MiApp. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
