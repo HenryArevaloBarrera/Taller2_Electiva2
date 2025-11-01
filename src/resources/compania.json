@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "nombre": "Nintendo",
+        "pais": "Japón",
+        "fundacion": 1889,
+        "empleados": 7200
+    },
+    {
+        "id": 2,
+        "nombre": "Sony Interactive Entertainment",
+        "pais": "Japón",
+        "fundacion": 1993,
+        "empleados": 8000
+    },
+    {
+        "id": 3,
+        "nombre": "Microsoft Studios",
+        "pais": "Estados Unidos",
+        "fundacion": 2000,
+        "empleados": 2300
+    },
+    {
+        "id": 4,
+        "nombre": "Electronic Arts",
+        "pais": "Estados Unidos",
+        "fundacion": 1982,
+        "empleados": 13000
+    },
+    {
+        "id": 5,
+        "nombre": "Capcom",
+        "pais": "Japón",
+        "fundacion": 1979,
+        "empleados": 3000
+    },
+    {
+        "id": 6,
+        "nombre": "Ubisoft",
+        "pais": "Francia",
+        "fundacion": 1986,
+        "empleados": 20000
+    },
+    {
+        "id": 7,
+        "nombre": "Square Enix",
+        "pais": "Japón",
+        "fundacion": 1975,
+        "empleados": 5000
+    },
+    {
+        "id": 8,
+        "nombre": "Sega",
+        "pais": "Japón",
+        "fundacion": 1960,
+        "empleados": 6000
+    },
+    {
+        "id": 9,
+        "nombre": "Konami",
+        "pais": "Japón",
+        "fundacion": 1969,
+        "empleados": 4800
+    },
+    {
+        "id": 10,
+        "nombre": "Bandai Namco",
+        "pais": "Japón",
+        "fundacion": 1955,
+        "empleados": 7000
+    },
+    {
+        "id": 11,
+        "nombre": "Activision Blizzard",
+        "pais": "Estados Unidos",
+        "fundacion": 2008,
+        "empleados": 13000
+    },
+    {
+        "id": 12,
+        "nombre": "Rockstar Games",
+        "pais": "Estados Unidos",
+        "fundacion": 1998,
+        "empleados": 2000
+    },
+    {
+        "id": 13,
+        "nombre": "Bethesda Softworks",
+        "pais": "Estados Unidos",
+        "fundacion": 1986,
+        "empleados": 4300
+    },
+    {
+        "id": 14,
+        "nombre": "CD Projekt",
+        "pais": "Polonia",
+        "fundacion": 1994,
+        "empleados": 1200
+    },
+    {
+        "id": 15,
+        "nombre": "Valve",
+        "pais": "Estados Unidos",
+        "fundacion": 1996,
+        "empleados": 360
+    },
+    {
+        "id": 16,
+        "nombre": "Epic Games",
+        "pais": "Estados Unidos",
+        "fundacion": 1991,
+        "empleados": 4300
+    },
+    {
+        "id": 17,
+        "nombre": "Take-Two Interactive",
+        "pais": "Estados Unidos",
+        "fundacion": 1993,
+        "empleados": 7000
+    },
+    {
+        "id": 18,
+        "nombre": "Insomniac Games",
+        "pais": "Estados Unidos",
+        "fundacion": 1994,
+        "empleados": 400
+    },
+    {
+        "id": 19,
+        "nombre": "Naughty Dog",
+        "pais": "Estados Unidos",
+        "fundacion": 1984,
+        "empleados": 400
+    },
+    {
+        "id": 20,
+        "nombre": "FromSoftware",
+        "pais": "Japón",
+        "fundacion": 1986,
+        "empleados": 350
+    }
+]
